@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Push-Pop</title>
+</head>
+<body>
+<p id="list1"></p>
+<p id="list2"></p>
+<p id="list3"></p>
+<p id="list4"></p>
+
+
+<script>
+var array=["car","bike","truck","bicycle"];
+//Add element from last
+array.push("motorbike");
+document.getElementById("list1").innerHTML=array.join(",");
+//Remove element from last
+array.pop();
+document.getElementById("list2").innerHTML=array.join(",");
+//Add element in First place
+array.unshift("motorbike");
+document.getElementById("list3").innerHTML=array.join(",");
+//Remove element from First place
+array.shift();
+document.getElementById("list4").innerHTML=array.join(",");
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Events</title>
+</head>
+<body>
+  
+  <p id="event1"></p>
+  <p id="event2"></p>
+  <p id="event3"></p>
+  
+  <!-- if we click it will show -->
+  <button onclick="getElementById('event1').innerHTML=Date()">Time</button></br>
+  
+  <!-- if we put the mouse over it will show -->
+  <button onmouseover="getElementById('event2').innerHTML=Date()">Time</button></br>
+  
+  <!-- if we put the mouse over and then out of the area it will show -->
+  <button onmouseout="getElementById('event3').innerHTML=Date()">Time</button>
+  
+</body>
+</html>

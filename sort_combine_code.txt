@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Sort Combine</title>
+</head>
+<body>
+<p id="list1"><p>
+<p id="list2"><p>
+<p id="list3"><p>
+
+
+<script>
+var array1=["Volvo","BMW","Toyota","Mazda"];
+array1.sort();
+document.getElementById("list1").innerHTML=array1.join();
+
+var array2=["B","D","A","C"];
+array2.reverse();
+document.getElementById("list2").innerHTML=array2.join();
+
+var combine=array1.concat(array2);
+document.getElementById("list3").innerHTML=combine;
+</script>
+
+</body>
+</html>

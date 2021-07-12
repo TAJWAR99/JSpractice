@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array ADD-Change-Delete</title>
+</head>
+<body>
+<p id="list1"></p>
+<p id="list2"></p>
+<p id="list3"></p>
+<p id="list4"></p>
+
+<script>
+var array=["car","bike","truck","bicycle"];
+//Change an element
+array[0]="Mango";
+document.getElementById("list1").innerHTML=array.join(",");
+//Delete an element of Array
+delete array[0];
+document.getElementById("list2").innerHTML=array.join(",");
+//ADD element between Array
+array.splice(2,0,"Mango","Banana");
+document.getElementById("list3").innerHTML=array.join(",");
+array.splice(2,1,"A","B");
+document.getElementById("list4").innerHTML=array.join(",");
+</script>
+
+
+
+</body>
+</html>

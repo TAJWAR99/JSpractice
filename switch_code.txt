@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+
+var day2="Sun";
+switch (day2) {
+  case "Sunday":
+    day2 = "A";
+    break;
+  case "Monday":
+    day2 = "B";
+    break;
+  case "Tuesday":
+    day2 = "C";
+    break;
+  default:
+    day2="I don't know";
+}
+document.getElementById("demo2").innerHTML = "Today is " + day2;
+</script>
+
+</body>
+</html>
